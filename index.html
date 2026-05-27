@@ -107,7 +107,8 @@
 
   /* ABOUT */
   .about-grid{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:flex-start}
-  @media(max-width:700px){.about-grid{grid-template-columns:1fr;gap:32px}}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:32px}}
+  @media(max-width:860px){.about-photo{max-width:220px}}
   .about-photo{flex-shrink:0}
   .about-photo img{width:100%;display:block;object-fit:cover;object-position:center top;aspect-ratio:3/4;border-radius:18px;border:1px solid var(--border)}
   .about-photo-badge{margin-top:10px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
@@ -210,13 +211,18 @@
     .container{padding:0 18px}
     .price-grid{grid-template-columns:1fr}
     .svc-row{padding:14px 18px}
+    .about-grid{grid-template-columns:1fr;gap:28px}
+    .about-photo{max-width:180px}
+    .about-text h2{font-size:2.2rem;letter-spacing:-1px}
+    .about-text p{font-size:1rem;line-height:1.7}
   }
   @media(max-width:768px){
     .vs-wrap{grid-template-columns:1fr}
-    .about-grid{grid-template-columns:160px 1fr;gap:28px}
     .contact-wrap{grid-template-columns:1fr;gap:40px}
     .price-grid{grid-template-columns:1fr}
     .reviews-grid{grid-template-columns:1fr}
+    .about-grid{grid-template-columns:1fr;gap:28px}
+    .about-photo{max-width:200px}
   }
 </style>
 </head>
